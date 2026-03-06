@@ -31,7 +31,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("https://internverse-frontend.vercel.app"));
+        config.setAllowedOrigins(List.of("https://internverse-frontend-ten.vercel.app"));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setExposedHeaders(List.of("Authorization"));
@@ -77,3 +77,4 @@ public class SecurityConfig {
     }
 
 }
+
