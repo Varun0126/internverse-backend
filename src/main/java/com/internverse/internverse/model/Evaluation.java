@@ -6,6 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
+import jakarta.persistence.FetchType;
 import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -17,7 +18,7 @@ public class Evaluation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private int rating;
+    private Integer rating;  // ✅ Integer not int — fixes JSON deserialization
 
     private String feedback;
 
@@ -25,6 +26,6 @@ public class Evaluation {
 
     @OneToOne
     @JoinColumn(name = "submission_id")
-    @JsonIgnoreProperties({"evaluation", "intern"})  // ✅ stop circular loop
+    @JsonIgnoreProperties({"evaluation", "intern"})
     private TaskSubmission submission;
 }
