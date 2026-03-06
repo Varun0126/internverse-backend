@@ -5,9 +5,9 @@ A full-stack **Intern Management System** built with **Spring Boot** and **React
 ---
 
 ## 🚀 Live Demo
-
-- **Frontend:** [internverse.vercel.app](https://internverse.vercel.app) *(coming soon)*
-- **Backend API:** [internverse-backend.onrender.com](https://internverse-backend.onrender.com) *(coming soon)*
+- **Frontend:** https://internverse-frontend-ten.vercel.app
+- **Backend API:** https://internverse-backend-prag.onrender.com
+```
 
 ---
 
